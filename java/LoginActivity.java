@@ -21,7 +21,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
-    private String Url = "http://172.25.83.42/ClipStacksAPI/Login.php";
+    private String Url = "http://10.0.0.1/ClipStacksAPI/Login.php";
 
     @Override
     protected void onCreate(Bundle SavedInstanceState) {
