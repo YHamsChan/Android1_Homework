@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF92ED">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Now Playing"
+        android:fontFamily="@font/chewy"
+        android:textColor="@color/white"
+        android:textSize="18pt"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TITLE.mp4"
+        android:fontFamily="@font/comic_bold"
+        android:textColor="@color/white"
+        android:textSize="18pt"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        tools:ignore="HardcodedText"/>
+
+    <VideoView
+        android:id="@+id/VideoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/LeaveButton"
+        android:fontFamily="@font/chewy"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave"
+        android:textSize="20pt"
+        tools:ignore="HardcodedText"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corner"
+        />
+
+</LinearLayout>
