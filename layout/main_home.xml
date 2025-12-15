@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF92ED">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8pt"
+                android:orientation="vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome To Home"
+                android:fontFamily="@font/chewy"
+                android:textColor="@color/white"
+                android:textSize="18pt"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                tools:ignore="HardcodedText"/>
+            <TextView
+                android:id="@+id/UserNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="\@Username"
+                android:fontFamily="@font/comic_bold"
+                android:textColor="@color/white"
+                android:textSize="12pt"
+                android:layout_gravity="center"
+                tools:ignore="HardcodedText"/>
+
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/RecommendedList"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recommended"
+                    android:fontFamily="@font/chewy"
+                    android:textColor="@color/white"
+                    android:textSize="18pt"
+                    android:layout_gravity="left"
+                    tools:ignore="HardcodedText,RtlHardcoded"/>
+
+                <ScrollView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:background="@drawable/rounded_corner"
+                            android:layout_margin="10dp"
+                            android:layout_width="180dp"
+                            android:layout_height="220dp"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/comic_bold"
+                                android:text="CEREAL!!"
+                                android:textAlignment="center"
+                                android:textColor="#BD2B95"
+                                android:textSize="10pt"
+                                tools:ignore="HardcodedText" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:src="@mipmap/thumbnail_cereal"
+                                android:scaleType="centerCrop"
+                                android:padding="5dp"/>
+
+                            <Button
+                                android:id="@+id/WATCH_CEREAL"
+                                android:fontFamily="@font/chewy"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Watch"
+                                android:textSize="7pt"
+                                tools:ignore="HardcodedText"
+                                android:layout_gravity="center"
+                                android:background="@drawable/rounded_corner"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/LatestList"
+                >
+
+                <TextView
+                    android:fontFamily="@font/chewy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Latest"
+                    android:textColor="@color/white"
+                    android:textSize="18pt"
+                    android:layout_gravity="left"
+                    tools:ignore="HardcodedText,RtlHardcoded"/>
+
+                <ScrollView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner">
+                        <LinearLayout
+                            android:layout_margin="10dp"
+                            android:background="@color/white"
+                            android:layout_width="180dp"
+                            android:layout_height="200dp"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/comic_bold"
+                                android:text="Character Creator"
+                                android:textAlignment="center"
+                                android:textColor="#BD2B95"
+                                android:textSize="10pt"
+                                tools:ignore="HardcodedText" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:src="@mipmap/thumbnail_charactercreator"
+                                android:scaleType="centerCrop"
+                                android:padding="5dp"/>
+
+                            <Button
+                                android:id="@+id/WATCH_CharacterCreator"
+                                android:fontFamily="@font/chewy"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Watch"
+                                android:textSize="7pt"
+                                tools:ignore="HardcodedText"
+                                android:layout_gravity="center"
+                                android:background="@drawable/rounded_corner"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
