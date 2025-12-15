@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF92ED">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@mipmap/icon_app"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10pt"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10pt"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:fontFamily="@font/chewy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="30pt"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="HardcodedText"/>
+
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:fontFamily="@font/comic_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textColor="@color/white"
+                    android:textSize="18pt"
+                    android:layout_gravity="left"
+                    tools:ignore="HardcodedText"/>
+
+                <EditText
+                    android:id="@+id/UserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/rounded_corner"
+                    android:hint="Max. 24 Characters."
+                    android:padding="8dp"
+                    android:textColor="#E612A6"
+                    android:textColorHint="#F8ADC8"
+                    android:textSize="12pt"
+                    android:inputType="text"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:fontFamily="@font/comic_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="@color/white"
+                    android:textSize="18pt"
+                    android:layout_gravity="left"
+                    tools:ignore="HardcodedText"/>
+                <EditText
+                    android:id="@+id/Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/rounded_corner"
+                    android:hint="Your secret code."
+                    android:padding="8dp"
+                    android:textColor="#E612A6"
+                    android:textColorHint="#F8ADC8"
+                    android:textSize="12pt"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/LogInButton"
+                android:fontFamily="@font/chewy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="12pt"
+                tools:ignore="HardcodedText"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_corner"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <TextView
+                    android:fontFamily="@font/comic_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Are You New?"
+                    android:textColor="@color/white"
+                    android:textSize="15pt"
+                    android:layout_gravity="left"
+                    tools:ignore="HardcodedText"/>
+
+                <Button
+                    android:id="@+id/SignUpButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corner"
+                    android:fontFamily="@font/chewy"
+                    android:text="Ask Owner For An Account"
+                    android:textSize="10pt"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
